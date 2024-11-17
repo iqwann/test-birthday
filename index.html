@@ -3,19 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Happy Birthday!</title>
+    <title>Happy Birthday, Sayang!</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
-        <h1>🎉 Happy Birthday, Sayang! 🎉</h1>
-        <p>Hari ini adalah hari spesial kamu, dan aku cuma mau bilang...</p>
-        <button onclick="revealMessage()">Klik Aku 😉</button>
-        <div id="message" style="display: none;">
-            <h2>❤️ Aku sayang kamu banget! ❤️</h2>
-            <p>Semoga tahun ini penuh kebahagiaan, kesuksesan, dan cinta kita makin erat ya! 🎂</p>
+        <div class="envelope">
+            <div class="flap" id="flap"></div>
+            <div class="letter" id="letter">
+                <p>Selamat ulang tahun, Sayangku! 🎉❤️</p>
+                <p>
+                    Aku bersyukur punya kamu di hidupku. Semoga hari ini dan seterusnya selalu bahagia, ya! 🎂
+                    Jangan lupa, aku sayang kamu lebih dari yang kamu tahu! 🌟
+                </p>
+                <button onclick="closeLetter()">Tutup Surat</button>
+            </div>
         </div>
-        <div id="balloons"></div>
+        <button class="open-btn" onclick="openLetter()">Buka Surat 💌</button>
     </div>
     <script src="script.js"></script>
 </body>
